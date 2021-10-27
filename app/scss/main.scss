@@ -4,4 +4,10 @@
 @import "fonts"; //подключаем шрифты (локально)
 
 //подключаем БЭМ блоки
+@import "blocks/body";
 @import "blocks/test";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/descr";
+@import "blocks/timer";
+@import "blocks/footer";

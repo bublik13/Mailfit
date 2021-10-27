@@ -1,0 +1,23 @@
+.timer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 315px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 34px;
+}
+.timer__img{
+    display: block;
+}
+.timer__number{
+    font-size: 40px;
+    line-height: 47px;
+    color: #2E2E2E;
+    font-weight: 700;
+}
+.timer__time{
+    font-size: 14px;
+    line-height: 16px;
+    color: #2E2E2E;
+}

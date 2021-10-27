@@ -5,16 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-
+<body class="body">
+    <!-- <img class="pp" src="img/bg-pp.jpg" alt="">
+    <style>
+      .pp{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 999;
+        transform: translateX(-50%);
+        opacity: .6;
+        pointer-events: none;
+      }
+    </style> -->
 <header class="header">
-    <div class="header__container">
-        <a href="#" class="header__logo logo"> <img width="78" height="40" src="img/logo-left.svg" alt="logo" class="logo__img"/></a>
-        <a href="#" class="header__logo"> <img width="78" height="40" src="img/logo-right.svg" alt="logo" class="logo__img"/></a>
-        <h1 class="header__title">Финальная распродажа этого лета!</h1>
+    <div class="header__container container">
+        <div class="header__top">
+            <a href="#" class="header__logo logo"> <img width="78" height="40" src="img/logo-left.svg" alt="logo" class="logo__img"/></a>
+            <a href="#" class="header__logo"> <img width="92" height="18" src="img/logo-right.svg" alt="logo" class="logo__img"/></a>
+        </div>
+        <h1 class="header__title">ФИНАЛЬНАЯ РАСПРОДАЖА ЭТОГО ЛЕТА!</h1>
         <div class="header__timer timer">
             <div class="timer__item">
                 <img width="118" height="60" src="img/timer-left.jpg" alt="watermelon" class="timer__img">
@@ -22,21 +38,85 @@
                 <div class="timer__time">До 19:00</div>
             </div>
             <div class="timer__item">
-                <img width="107" height="60" src="img/timer-left.jpg" alt="watermelon" class="timer__img">
+                <img width="107" height="60" src="img/timer-center.jpg" alt="watermelon" class="timer__img">
                 <div class="timer__number">8%</div>
                 <div class="timer__time">До 22:00</div>
             </div>
             <div class="timer__item">
-                <img width="70" height="60" src="img/timer-left.jpg" alt="watermelon" class="timer__img">
+                <img width="70" height="60" src="img/timer-right.jpg" alt="watermelon" class="timer__img">
                 <div class="timer__number">5%</div>
                 <div class="timer__time">До 00:00</div>
             </div>
         </div>
-        <div class="header__subtitle">Промокод</div>
-        <input type="text"class="header__input" autofocus maxlength="10"/>
-        <button type="button" class="header__button">Получить скидку</button>
+        <div class="header__bottom">
+            <div class="header__subtitle">Промокод</div>
+            <input type="text"class="header__input" autofocus maxlength="10"/>
+            <button type="button" class="header__button">Получить скидку</button>
+        </div>
     </div>
 </header>
+<section class="descr">
+    <div class="descr__container container">
+        <div class="descr__top">
+            <p class="descr__text">Здравствуйте!<br/><br/>
+                Теперь, когда вы готовы к школе и обновили спальни своих малышей, пришла пора подумать о себе. Возможно, настало время поменять подушку или вы давно собирались купить <a href="#" class="descr__color"> шерстяное одеяло</a> на тот период, когда по ночам уже холодает, а отопление ещё не включили. 
+                <br/><br/>В конце концов, порадуйте себя новым комплектом <a href="#" class="descr__color"> мягкого постельного белья</a> или красивым <a href="#"class="descr__color"> уютным пледом</a>! Но торопитесь, <strong>скидка 10%</strong> на все эти радости будет действовать только <strong>до 13:00</strong>.
+            </p>
+        </div>
+        <div class="descr__center">
+            <div class="descr__item">
+                <img width="150" height="113" src="img/pillow.jpg" alt="pillow" class="descr__img">
+                <a href="#" class="descr__link">Подушки</a>
+            </div>
+            <div class="descr__item">
+                <img width="150" height="113" src="img/blanket.jpg" alt="blanket" class="descr__img">
+                <a href="#" class="descr__link">Одеяла</a>
+            </div>
+            <div class="descr__item">
+                <img width="150" height="113" src="img/bed-linen.jpg" alt="bed-linen" class="descr__img">
+                <a href="#" class="descr__link">Постельное бельё</a>
+            </div>
+            <div class="descr__item">
+                <img width="150" height="113" src="img/plaid.jpg" alt="plaid" class="descr__img">
+                <a href="#" class="descr__link">Пледы и покрывала</a>
+            </div>
+            <div class="descr__item">
+                <img width="150" height="113" src="img/bath.jpg" alt="bath" class="descr__img">
+                <a href="#" class="descr__link">Ванная</a>
+            </div>
+            <div class="descr__item">
+                <img width="150" height="113" src="img/kitchen.jpg" alt="kitchen" class="descr__img">
+                <a href="#" class="descr__link">Кухня</a>
+            </div>
+        </div>
+        <div class="descr__bottom">
+            <button type="button" class="descr__button">В магазин</button>
+            <p class="descr__subtext">Промокод действует на все товары, кроме разделов «Кровати» и «Матрасы». Cкидка не суммируется со скидками на сайте, скидками и подарками по другим промокодам и дисконтным картам. Размер скидки зависит от времени оформления заказа.
+            </p>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__top">
+            <img src="img/social.svg" alt="social" class="footer__social" width="245" height="25">
+            <a class="footer__phone" href="tel:+78005556055">8 800 555 60 55</a>
+        </div>
+        <p class="footer__text">
+            Данное письмо было отправлено на <a href="#" class="footer__color">hafizova.i@gmail.com</a>. Пожалуйста, добавьте <a href="#" class="footer__color">mailer@spim.ru</a> в вашу адресную книгу, чтобы наши письма не попадали в спам.
+        </p>
+        <div class="footer__bottom">
+            <div class="footer__item">
+                <img class="footer__icon" src="img/close-icons.svg" alt="close" width="12" height="12"/>
+                <a href="#" class="footer__link">Отписаться</a>
+            </div>
+            <div class="footer__item">
+                <img class="footer__icon" src="img/web-icon.svg" alt="web" width="14" height="14"/>
+                <a href="#" class="footer__link">Веб-версия</a>
+             </div>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>
